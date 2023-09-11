@@ -42,10 +42,10 @@ SUPPORT_LINK = environ.get('SUPPORT_LINK', '')
 UPDATES_LINK = environ.get('UPDATES_LINK', '')
 
 # Bot settings
-AUTO_FILTER = is_enabled((environ.get('AUTO_FILTER', "True")), True)
+AUTO_FILTER = is_enabled((environ.get('AUTO_FILTER', "True")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SPELL_CHECK = is_enabled(environ.get("SPELL_CHECK", "True"), True)
-SHORTLINK = is_enabled((environ.get('SHORTLINK', "True")), True)
+SHORTLINK = is_enabled((environ.get('SHORTLINK', "False")), True)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "False")), False)
 WELCOME = is_enabled((environ.get('WELCOME', "True")), False)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
