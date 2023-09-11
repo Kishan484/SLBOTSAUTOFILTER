@@ -534,10 +534,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton("+ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ +", url=f'http://t.me/{temp.U_NAME}?startgroup=start')
         ],[
-            InlineKeyboardButton('ᴏᴡɴᴇʀ', callback_data='my_owner'),
-            InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='my_about')
+            InlineKeyboardButton('🧑‍💻ᴏᴡɴᴇʀ♥️', callback_data='my_owner'),
+            InlineKeyboardButton('♻️ᴀʙᴏᴜᴛ🔴', callback_data='my_about')
         ],[
-            InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ ʙʏ ʙᴏᴛ', callback_data='earn')
+            InlineKeyboardButton('💰ᴇᴀʀɴ ᴍᴏɴᴇʏ ʙʏ ʙᴏᴛ💲', callback_data='earn')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -559,7 +559,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "my_owner":
         buttons = [[
             InlineKeyboardButton('🏠 Home 🏠', callback_data='start'),
-            InlineKeyboardButton('Contact', url='https://t.me/Hansaka_Anuhas')
+            InlineKeyboardButton('Contact', url='https://t.me/kishan484')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
