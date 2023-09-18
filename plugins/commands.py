@@ -116,7 +116,8 @@ async def start(client, message):
                 file_caption=file.caption
             )   
             btn = [[
-                InlineKeyboardButton("✛ ᴡᴀᴛᴄʜ & ᴅᴏᴡɴʟᴏᴀᴅ ✛", callback_data=f"stream#{file.file_id}")
+                InlineKeyboardButton("✛ ᴡᴀᴛᴄʜ & ᴅᴏᴡɴʟᴏᴀᴅ ✛", callback_data=f"stream#{file.file_id}"),
+                InlineKeyboardButton('♻️ SEARCH GROUP 🔴', url='https://t.me/MOVIE_WORLD_IN_MOVIE'),
             ]]
             await client.send_cached_media(
                 chat_id=message.from_user.id,
@@ -140,7 +141,8 @@ async def start(client, message):
         file_caption=files.caption
     )
     btn = [[
-        InlineKeyboardButton("✛ ᴡᴀᴛᴄʜ & ᴅᴏᴡɴʟᴏᴀᴅ ✛", callback_data=f"stream#{file_id}")
+        InlineKeyboardButton("✛ ᴡᴀᴛᴄʜ & ᴅᴏᴡɴʟᴏᴀᴅ ✛", callback_data=f"stream#{file_id}"),
+        InlineKeyboardButton('♻️ SEARCH GROUP 🔴', url='https://t.me/MOVIE_WORLD_IN_MOVIE'),
     ]]
     await client.send_cached_media(
         chat_id=message.from_user.id,
